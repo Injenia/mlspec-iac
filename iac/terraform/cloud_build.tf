@@ -3,10 +3,10 @@ resource "google_cloudbuild_trigger" "backend_trigger" {
   name    = "be-volumetry-trigger"
 
   github {
-    owner = "SGINJ"
+    owner = "Injenia"
     name  = "mlspec-be-volumetry"
     push {
-      branch = "main"
+      branch = "master"
     }
   }
 
